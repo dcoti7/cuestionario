@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <title>Cuestionario app</title>
+</head>
+<body class = "flex">
+    <div class = "wrapper">
+        <div class = "quiz-container">
+            <div class = "quiz-head">
+                <h1 class = "quiz-title">Cuestionario</h1>
+                <div class = "quiz-score flex">
+                    <span id = "correct-score"></span>/<span id = "total-question">10</span>
+                </div>
+            </div>
+            <div class = "quiz-body">
+                <h2 class = "quiz-question" id = "question"></h2>
+                <ul class = "quiz-options">
+                </ul>
+                <div id = "result">
+                </div>
+            </div>
+            <div class = "quiz-foot">
+                <button type = "button" id = "check-answer" style="display: none;">Verificar</button>
+                <button type = "button" id = "play-again" style="display: block;">Nuevo Juego!</button>
+            </div>
+            <div class="cronometro">
+                <div>
+                    <strong class="segundos"></strong>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Script  -->
+    <script src="./script.js"></script>
+</body>
+</html>
